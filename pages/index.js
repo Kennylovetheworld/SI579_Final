@@ -1,4 +1,4 @@
-import { Form, Select, InputNumber, Switch, Slider, Button } from 'antd'
+import { Row, Col, Form, Select, InputNumber, Switch, Slider, Button } from 'antd'
 
 // Custom DatePicker that uses Day.js instead of Moment.js
 import DatePicker from '../components/DatePicker'
@@ -15,8 +15,15 @@ const content = {
 }
 
 export default function Home() {
+  const size = "large";
   return (
     <div style={content}>
+    <Row>
+      <Col span={6}><Button size={size}>Market1</Button></Col>
+      <Col span={6}><Button size={size}>Market2</Button></Col>
+      <Col span={6}><Button size={size}>Market3</Button></Col>
+      <Col span={6}><Button size={size}>Market4</Button></Col>
+    </Row>
       <div className="text-center mb-5">
         <Link href="#">
           <a className="logo mr-0">
